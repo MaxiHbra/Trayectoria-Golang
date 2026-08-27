@@ -1,0 +1,8 @@
+El proceso de instalación no fue dificil gracias a la página oficial:
+	https://go.dev/doc/install
+Actualmente estoy utilizando la ultima versión disponible, la 1.27.0
+Luego de descargar y el extraer el tar en la carpeta /usr/local hay que agregar dos comandos en ~/.bashrc o en ~/.zshrc.
+Podemos acceder con nano ~/.bashrc para luego pegar en el final del documento:
+	export GOPATH=$HOME/go
+	export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+Una vez terminado esto verifico go version en la terminal para asegurarme de la instalación.
