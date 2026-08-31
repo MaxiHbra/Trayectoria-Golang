@@ -7,8 +7,21 @@ func hola (s string) string {
 func resta_dos (a int) int {
 	return (a-2)
 }
-
+func esPar(x int) string{
+	if x==0 {
+		return "Es par"
+}	else{
+		return esImpar(x-1)
+}}
+func esImpar(x int) string{
+	if x==0 {
+		return "Es impar"
+}	else{
+		return esPar(x-1)
+}}
 func main() {
 	fmt.Println(hola("Masi"))
 	fmt.Println("Si restamos 2 a 5= ", resta_dos(5))
+	fmt.Println("El numero 8 ",esPar(8))
 }
+
